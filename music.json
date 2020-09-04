@@ -1,32 +1,32 @@
 [
     {
-        "src":"/yinyue/处处吻-杨千嬅.mp3",
+        "src":"/music/yinyue/处处吻-杨千嬅.mp3",
         "title":"处处吻",
         "auther":"杨千嬅",
-        "img":"/yinyue/yangqinahua.jpg"
+        "img":"/music/yinyue/yangqinahua.jpg"
     },
     {
-        "src":"/yinyue/金玟岐 - 岁月神偷.mp3",
+        "src":"/music/yinyue/金玟岐 - 岁月神偷.mp3",
         "title":"岁月神偷",
         "auther":"金玟岐",
-        "img":"/yinyue/jin.jpg"
+        "img":"/music/yinyue/jin.jpg"
     },
     {
-        "src":"/yinyue/你是人间四月天-邵帅.mp3",
+        "src":"/music/yinyue/你是人间四月天-邵帅.mp3",
         "title":"你是人间四月天",
         "auther":"邵帅",
-        "img":"/yinyue/ni.jpg"
+        "img":"/music/yinyue/ni.jpg"
     },
     {
-        "src":"/yinyue/苏肤佳 - 世间美好与你环环相扣.mp3",
+        "src":"/music/yinyue/苏肤佳 - 世间美好与你环环相扣.mp3",
         "title":"世间美好与你环环相扣",
         "auther":"苏肤佳",
-        "img":"/yinyue/shi.jpg"
+        "img":"/music/yinyue/shi.jpg"
     },
     {
-        "src":"/yinyue/太一 - 像暗杀似的绕到背后突然拥抱你.mp3",
+        "src":"/music/yinyue/太一 - 像暗杀似的绕到背后突然拥抱你.mp3",
         "title":"像暗杀似的绕到背后突然拥抱你",
         "auther":"太一",
-        "img":"/yinyue/timg.jpg"
+        "img":"/music/yinyue/timg.jpg"
     }
 ]
