@@ -12,7 +12,6 @@ getMusiclist(function (list) {
 })
 
 audio.ontimeupdate = function () {
-  console.log(this, this.currentTime)
   $('.musicbox .progress-now').style.width = (this.currentTime / this.duration) * 100 + '%'
   var min = Math.floor(this.currentTime / 60)
   var sec = Math.floor(this.currentTime % 60) + ''
@@ -35,20 +34,16 @@ $('.musicbox .play').onclick = function () {
 
 $('.musicbox .forward').onclick = function () {
   currentIndex = (++currentIndex) % Musiclist.length
-  console.log(currentIndex)
   loadMusic(Musiclist[currentIndex])
 }
 
 
 $('.musicbox .back').onclick = function () {
   currentIndex = (Musiclist.length + (--currentIndex)) % Musiclist.length
-  console.log(currentIndex)
   loadMusic(Musiclist[currentIndex])
 }
 $('.musicbox .bar').onclick = function (e) {
-  console.log(e)
   var percent = e.offsetX / parseInt(getComputedStyle(this).width)
-  console.log(percent)
   audio.currentTime = audio.duration * percent
 }
 audio.onended = function () {
@@ -77,7 +72,6 @@ function getMusiclist(callback) {
 }
 
 function loadMusic(musicObj) {
-  console.log('begin play', musicObj)
   $('.musicbox .title').innerText = musicObj.title
   $('.musicbox .auther').innerText = musicObj.auther
   $('.cover').style.backgroundImage = 'url(' + musicObj.img + ')'
@@ -93,7 +87,6 @@ function generateList(list) {
   list.forEach(function (musicObj) {
     var node = document.createElement('li')
     node.innerText = musicObj.title + '-' + musicObj.auther
-    console.log(node)
     container.appendChild(node)
   })
   musicListContainer.appendChild(container)
@@ -107,7 +100,6 @@ musicListContainer.onclick = function(e){
         currentIndex = i
       }
     }
-    console.log(currentIndex)
     loadMusic(Musiclist[currentIndex])
   }
 }
